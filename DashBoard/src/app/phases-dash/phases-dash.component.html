@@ -1,3 +1,112 @@
-<p>
-  phases-dash works!
-</p>
+
+<div class="row">
+    <form action="#">
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="CityName" type="text" class="validate">
+          <label for="CityName">City Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="ProjectName" type="text" class="validate">
+          <label for="ProjectName">Project Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="Project Code" type="text" class="validate">
+          <label for="Project Code">Project Code</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="ProjectCost" type="text" class="validate">
+          <label for="ProjectCost">Project Cost</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="ProjectDuration" type="text" class="validate">
+          <label for="ProjectDuration">Project Duration</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="expectedCompletionDate" type="text" class="validate">
+          <label for="expectedCompletionDate">Expected Completion Date</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="ApprovalDateCSMC" type="text" class="validate">
+          <label for="ApprovalDateCSMC">Approval date by CSMC</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="ULBname" type="text" class="validate">
+          <label for="ULBname">ULB Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="Beneficiaries" type="text" class="validate">
+          <label for="Beneficiaries">Beneficiaries</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="NodalAgency" type="text" class="validate">
+          <label for="NodalAgency">Nodal Agency</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="NumberOfHouses" type="text" class="validate">
+          <label for="NumberOfHouses">Number of houses</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <textarea id="ProjectDescription" class="materialize-textarea"></textarea>
+          <label for="ProjectDescription">Project Description</label>
+        </div>
+      </div>
+
+      
+        <p>
+          <label for="red">
+            <input name="group3" id="red" type="radio"/>
+            <span>Red</span>
+          </label>
+        </p>
+        <p>
+          <label for="yellow">
+            <input id="yellow" name="group3" type="radio"/>
+            <span>Yellow</span>
+          </label>
+        </p>
+
+        <!-- 
+        
+            <label>
+             <input type="radio" id="ISSR" checked="checked" onchange="displayQuestion(this.value)" class="with-gap" name="group3" checked /><span>In-situ slum</span></label>
+
+           <label class="category">
+             <input type="radio" id="AHP" name="category" checked="checked" onchange="displayQuestion(this.value)" />AHP<span class="checkmark"></span></label>
+
+           <label class="category">
+             <input type="radio" id="BCLS" name="category" checked="checked" onchange="displayQuestion(this.value)" />BCLS<span class="checkmark"></span></label>
+
+           <label class="category">
+             <input type="radio" id="CLSS" name="category" checked="checked" onchange="displayQuestion(this.value)" />CLSS<span class="checkmark"></span></label>
+         -->     
+
+      <button [routerLink] = "['home']" class="btn waves-effect waves-light btnSum" type="submit" name="action">Add Project
+                 
+                </button>
+    </form>
+  </div>

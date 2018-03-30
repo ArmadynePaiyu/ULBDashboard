@@ -27,6 +27,10 @@ import {MaterializeModule} from 'angular2-materialize';
         {
           path : "home",
           component : HomeDashComponent
+        },
+        {
+          path : "phases",
+          component : PhasesDashComponent
         }
       ]
     )
