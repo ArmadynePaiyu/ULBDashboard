@@ -33,13 +33,13 @@
       </div>
       <div class="row">
         <div class="input-field col s6">
-          <input id="expectedCompletionDate" type="text" class="validate">
+          <input id="expectedCompletionDate" type="text" class="datepicker">
           <label for="expectedCompletionDate">Expected Completion Date</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s6">
-          <input id="ApprovalDateCSMC" type="text" class="validate">
+          <input id="ApprovalDateCSMC" type="text" class="datepicker">
           <label for="ApprovalDateCSMC">Approval date by CSMC</label>
         </div>
       </div>
@@ -76,8 +76,8 @@
         </div>
       </div>
 
-      
-        <p>
+
+        <!-- <p>
           <label for="red">
             <input name="group3" id="red" type="radio"/>
             <span>Red</span>
@@ -88,10 +88,10 @@
             <input id="yellow" name="group3" type="radio"/>
             <span>Yellow</span>
           </label>
-        </p>
+        </p> -->
 
-        <!-- 
-        
+        <!--
+
             <label>
              <input type="radio" id="ISSR" checked="checked" onchange="displayQuestion(this.value)" class="with-gap" name="group3" checked /><span>In-situ slum</span></label>
 
@@ -103,10 +103,134 @@
 
            <label class="category">
              <input type="radio" id="CLSS" name="category" checked="checked" onchange="displayQuestion(this.value)" />CLSS<span class="checkmark"></span></label>
-         -->     
+         -->
+
+         <div id="ISSRForm" style="display:none;">
+           <div class="row">
+             <div class="input-field col s6">
+               <input id="SlumName" type="text" class="validate">
+               <label for="SlumName">Slum Name</label>
+             </div>
+           </div>
+
+           <div class="row">
+             <div class="input-field col s6">
+               <input id="TotalSlumArea" type="text" class="validate">
+               <label for="TotalSlumArea">Total Area</label>
+             </div>
+           </div>
+
+           <div class="row">
+            <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Status</a>
+            <!-- Dropdown Structure -->
+            <ul id='dropdown1' class='dropdown-content'>
+              <li><a href="#!">Notified</a></li>
+              <li><a href="#!">Identified</a></li>
+              <li><a href="#!">Recognised</a></li>
+            </ul>
+           </div>
+
+           <div class="row">
+             <div class="input-field col s6">
+               <input id="slumPopulation" type="text" class="validate">
+               <label for="slumPopulation">Total population of the slum</label>
+             </div>
+           </div>
+
+           <div class="row">
+             <div class="input-field col s6">
+               <input id="areaUnderRehabilatation" type="text" class="validate">
+               <label for="areaUnderRehabilatation">Total area under rehabilitation</label>
+             </div>
+           </div>
+
+           <div class="row">
+             <div class="input-field col s6">
+               <input id="existingHouseholds" type="text" class="validate">
+               <label for="existingHouseholds">Number of existing households</label>
+             </div>
+           </div>
+         </div>
+
+         <div id="AHPForm" style="display:none;">
+           <div class="row">
+             <p>
+              <label for="statePriceApproved">
+                <input id="statePriceApproved" type="checkbox" class="filled-in" checked="checked" />
+                <span>Whether state price is approved by state/UT or not</span>
+              </label>
+            </p>
+           </div>
+
+           <div class="row">
+             <p>
+              <label for="carpetAreaOfEWSUnits">
+                <input type="checkbox" class="filled-in" checked="checked" id="carpetAreaOfEWSUnits"/>
+                <span>Carpet Area</span>
+              </label>
+            </p>
+           </div>
+
+           <div class="row">
+             <p>
+              <label for="EWSHouseholdsEligibleForCA">
+                <input id="EWSHouseholdsEligibleForCA" type="checkbox" class="filled-in" checked="checked" />
+                <span>Number of EWS Households eligible for Cenntral Assistance</span>
+              </label>
+            </p>
+           </div>
+
+           <div class="row">
+             <p>
+              <label for="procedureToSelectPrivatePartners">
+                <input id="procedureToSelectPrivatePartners" type="checkbox" class="filled-in" checked="checked" />
+                <span>Whether an open and transparent procedure has been envisaged to select private Partners</span>
+              </label>
+            </p>
+           </div>
+
+         </div>
+
+         <div id="BLCForm" style="display:none;">
+           <div class="row">
+             <p>
+              <label for="ensureRightfulOwnership">
+                <input id="ensureRightfulOwnership" type="checkbox" class="filled-in" checked="checked" />
+                <span>Whether it has been ensured that the selected beneficiaries have rightful ownership of the land</span>
+              </label>
+            </p>
+           </div>
+
+           <div class="row">
+             <p>
+              <label for="buildingPlanApproval">
+                <input id="buildingPlanApproval" type="checkbox" class="filled-in" checked="checked" />
+                <span>Whether the building plan for all houses has been approved</span>
+              </label>
+            </p>
+           </div>
+
+           <div class="row">
+             <p>
+              <label for="demandSurvey">
+                <input id="demandSurvey" type="checkbox" class="filled-in" checked="checked" />
+                <span>Whether the Demand Survey completed for Entire City</span>
+              </label>
+            </p>
+           </div>
+
+           <div class="row">
+             <p>
+              <label for="validationWithSECCData">
+                <input id="validationWithSECCData" type="checkbox" class="filled-in" checked="checked" />
+                <span>Whether validation with SECC Data for housing conditions constructed</span>
+              </label>
+            </p>
+           </div>
+
+         </div>
 
       <button [routerLink] = "['home']" class="btn waves-effect waves-light btnSum" type="submit" name="action">Add Project
-                 
-                </button>
+      </button>
     </form>
   </div>
