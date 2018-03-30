@@ -23,6 +23,10 @@ import {MaterializeModule} from 'angular2-materialize';
         {
           path : "" ,
           component : LoginDashComponent
+        },
+        {
+          path : "home",
+          component : HomeDashComponent
         }
       ]
     )
