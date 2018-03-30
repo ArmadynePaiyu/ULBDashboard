@@ -1,4 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import {$} from 'jquery' ;
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
+import { ModalDashComponent } from '../modal-dash/modal-dash.component';
+
+declare var $:any;
+
 
 @Component({
   selector: 'app-navbar-dash',
@@ -7,9 +13,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarDashComponent implements OnInit {
 
-  constructor() { }
+
 
   ngOnInit() {
+
+    $(document).ready(function(){
+
+      $(".dropdown-trigger").dropdown();
+    
+    });
+
+   }
+
+
+  constructor() {
+
+
+
   }
 
 }
+
+
+
+
+

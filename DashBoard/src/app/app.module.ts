@@ -7,6 +7,11 @@ import { HomeDashComponent } from './home-dash/home-dash.component';
 import { PhasesDashComponent } from './phases-dash/phases-dash.component';
 import { RouterModule, Routes } from '@angular/router';
 import {MaterializeModule} from 'angular2-materialize';
+import { ChartsModule } from 'ng2-charts';
+import { SidebarDashComponent } from './sidebar-dash/sidebar-dash.component';
+import { ModalDashComponent } from './modal-dash/modal-dash.component';
+import {$} from 'jquery' ;
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -14,9 +19,12 @@ import {MaterializeModule} from 'angular2-materialize';
     NavbarDashComponent,
     LoginDashComponent,
     HomeDashComponent,
-    PhasesDashComponent
+    PhasesDashComponent,
+    SidebarDashComponent,
+    ModalDashComponent
   ],
   imports: [
+    ChartsModule,
     BrowserModule,
     RouterModule.forRoot(
       [
