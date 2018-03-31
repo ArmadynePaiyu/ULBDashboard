@@ -12,6 +12,7 @@ import { SidebarDashComponent } from './sidebar-dash/sidebar-dash.component';
 import { ModalDashComponent } from './modal-dash/modal-dash.component';
 import {$} from 'jquery' ;
 import {MatDialogModule} from '@angular/material/dialog';
+import { ProjectPhaseDetailDashComponent } from './project-phase-detail-dash/project-phase-detail-dash.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     HomeDashComponent,
     PhasesDashComponent,
     SidebarDashComponent,
-    ModalDashComponent
+    ModalDashComponent,
+    ProjectPhaseDetailDashComponent
   ],
   imports: [
     ChartsModule,
@@ -35,6 +37,10 @@ import {MatDialogModule} from '@angular/material/dialog';
         {
           path : "home",
           component : HomeDashComponent
+        },
+        {
+          path : "phases",
+          component : PhasesDashComponent
         }
       ]
     )

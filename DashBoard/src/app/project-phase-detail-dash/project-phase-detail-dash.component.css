@@ -1,0 +1,27 @@
+.project-title h4{
+    color : #fff;
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight : 700;
+}
+
+.project-desc p {
+    color : #fff;
+    font-size: 14px;
+    font-weight : 500;
+}
+
+.background-image {
+    padding : 20px;
+    height: 160px;
+    background-image: url("phasebg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    filter: brightness(100%);
+}
+
+.form-data{
+    padding  :15px;
+}
