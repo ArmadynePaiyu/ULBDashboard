@@ -43,6 +43,10 @@ import { AddProjectDashComponent } from './add-project-dash/add-project-dash.com
         {
           path : 'phases',
           component : PhasesDashComponent
+        },
+        {
+          path : "addProject",
+          component : AddProjectDashComponent
         }
       ]
     )
