@@ -2,8 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import {$} from 'jquery' ;
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material';
 import { ModalDashComponent } from '../modal-dash/modal-dash.component';
+import { Router } from '@angular/router';
+import {MaterializeDirective} from 'angular2-materialize';
 
-declare var $:any;
+// declare var $:any;
 
 
 @Component({
@@ -17,16 +19,15 @@ export class NavbarDashComponent implements OnInit {
 
   ngOnInit() {
 
-    $(document).ready(function(){
+    // $(document).ready(function(){
 
-      $(".dropdown-trigger").dropdown();
-    
-    });
+    //   $('.dropdown-trigger').dropdown();
+    // });
 
    }
 
 
-  constructor() {
+  constructor(public router: Router) {
 
 
 
