@@ -3,21 +3,22 @@
       <div class="nav-wrapper">
         <a href="#!" class="brand-logo">Yojna</a>
 
-        <ul class="right hide-on-med-and-down" *ngIf="router.url === '/home' || router.url === '/phases'" >
-          <li><a class="waves-effect waves-light btn modal-trigger" (click)="ModalOpen()">New Project<i class="material-icons right">add</i></a></li>
+        <ul class="right hide-on-med-and-down" *ngIf="router.url === '/home' || router.url === '/phases' || router.url === '/phases/tender' || router.url === '/phases/bid' || router.url === '/phases/completed' || router.url === '/phases/started' " >
+          <li><a class="waves-effect waves-light btn modal-trigger customBtn" (click)="ModalOpen()">New Project<i class="small material-icons right">add</i></a></li>
           <!-- Dropdown Trigger -->
-          <a materialize="dropdown" class='dropdown-button btn' href='#' data-activates='dropdown1'>Setting<i class="material-icons right">arrow_drop_down</i></a>
+          <li><a href="mobile.html"><i class="material-icons">notifications</i></a></li>
+          <a materialize="dropdown" class='dropdown-button btn customDrop' href='#' data-activates='dropdown1'>Setting<i class="material-icons right">arrow_drop_down</i></a>
           <!-- Dropdown Structure -->
-          <ul id='dropdown1' class='dropdown-content'>
-            <li><a>one</a></li>
-            <li><a>two</a></li>
+          <ul id='dropdown1' class='dropdown-content' >
+            <li><a style="color :#6a60a9">Account</a></li>
             <li class="divider"></li>
-            <li><a>three</a></li>
+            <li><a style="color :#6a60a9">Log Out</a></li>
           </ul>
           <!-- <li><a class="dropdown-trigger"  data-target="dropdown1">Setting<i class="material-icons right">arrow_drop_down</i></a></li> -->
-          <li><a href="mobile.html"><i class="material-icons">notifications</i></a></li>
+          
         </ul>
 
+        
       </div>
     </nav>
   </div>

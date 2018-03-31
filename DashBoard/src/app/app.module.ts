@@ -14,6 +14,10 @@ import {$} from 'jquery' ;
 import {MatDialogModule} from '@angular/material/dialog';
 import { ProjectPhaseDetailDashComponent } from './project-phase-detail-dash/project-phase-detail-dash.component';
 import { AddProjectDashComponent } from './add-project-dash/add-project-dash.component';
+import { TenderDashComponent } from 'app/tender-dash/tender-dash.component';
+import { BidprocessDashComponent } from 'app/bidprocess-dash/bidprocess-dash.component';
+import { ConstructionCompletedDashComponent } from 'app/construction-completed-dash/construction-completed-dash.component';
+import { ConstructionStartedDashComponent } from 'app/construction-started-dash/construction-started-dash.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,11 @@ import { AddProjectDashComponent } from './add-project-dash/add-project-dash.com
     SidebarDashComponent,
     ModalDashComponent,
     ProjectPhaseDetailDashComponent,
-    AddProjectDashComponent
+    AddProjectDashComponent,
+    TenderDashComponent,
+    BidprocessDashComponent,
+    ConstructionCompletedDashComponent,
+    ConstructionStartedDashComponent
   ],
   imports: [
     ChartsModule,
@@ -42,7 +50,25 @@ import { AddProjectDashComponent } from './add-project-dash/add-project-dash.com
         },
         {
           path : 'phases',
-          component : PhasesDashComponent
+          component : PhasesDashComponent,
+          children : [
+            {
+              path : "tender",
+              component : TenderDashComponent
+            },
+            {
+              path : "bid",
+              component : BidprocessDashComponent
+            },
+            {
+              path : "completed",
+              component : ConstructionCompletedDashComponent
+            },
+            {
+              path : "started",
+              component : ConstructionStartedDashComponent
+            }
+          ]
         },
         {
           path : "addProject",

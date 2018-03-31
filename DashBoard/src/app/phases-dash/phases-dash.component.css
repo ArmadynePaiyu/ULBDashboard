@@ -25,3 +25,115 @@
    .input-field .prefix.active {
      color: #000;
    }
+
+   .tabs .tab a:hover, .tabs .tab a.active {
+     color : #6a60a9;
+     font-weight : 700;
+   }
+
+   .project-title h4{
+    color : #fff;
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight : 700;
+}
+
+.project-desc p {
+    color : #fff;
+    font-size: 14px;
+    font-weight : 500;
+}
+
+.background-image {
+    padding : 20px;
+    height: 160px;
+    background-image: url("phasebg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    filter: brightness(100%);
+}
+
+.form-data{
+    padding  :15px;
+}
+
+.comment-box{
+    background-color: #fff;
+    padding : 20px;
+
+}
+
+.commented-box {
+    background-color: #fff;
+    padding : 20px;
+    border-bottom : 1px solid #ececec;
+
+
+}
+
+.commented-box h6{
+    font-weight : 700;
+    color : #333;
+    margin-bottom : 0px;
+
+}
+
+.comment-box button{
+
+    background-color: #6a60a9 ;
+    color : #fff;
+    width : 150px;
+    border : none;
+    height:40px;
+
+}
+
+.uploadBtn {
+
+    background: none ;
+    border : 1px solid #6a60a9 !important;
+    color : #6a60a9;
+    width : 150px;
+    border : none;
+    height:40px;
+
+}
+
+
+.card{
+    box-shadow: 0px 2px 5px #ddd;
+}
+
+.header-btn{
+    width : 100%;
+    height : 60px;
+    background-color: #f4f4f4;
+    line-height: 60px;
+    position: relative;
+    bottom : 20px;
+}
+
+.header-btn ul li {
+    display: inline-block;
+    padding-left : 30px;
+}
+
+.header-btn ul li a {
+  color : #333;
+}
+
+.header-btn ul li a:hover{
+  color : #6a60a9;
+  font-weight: 700;
+}
+
+.tabs .indicator {
+
+  background-color: #6a5eab;
+}
+
+    .tabs .tab a {
+      color : #ebebeb;
+    }

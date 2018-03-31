@@ -1,15 +1,56 @@
 <div class="row">
-  
-      <ul class="tabs">
-        <li class="tab col s3"><a class="active" href="#test1">Project Details</a></li>
-        <li class="tab col s3"><a  href="#test2">Phase Timeline</a></li>
-      </ul>
- 
-    <div id="test1" >
 
-        <app-project-phase-detail-dash></app-project-phase-detail-dash>
+  <ul class="tabs">
+    <li class="tab col s3">
+      <a class="active" href="#test1">Project Details</a>
+    </li>
+    <li class="tab col s3">
+      <a href="#test2">Phase Timeline</a>
+    </li>
+  </ul>
 
+  <div id="test1">
+
+    <div class="row">
+
+      <div class="background-image">
+
+        <div class="project-title">
+          <h4>Andheri Slum Redevelopment</h4>
+        </div>
+
+        <div class="project-desc">
+
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an
+            <br/>unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+        </div>
+
+      </div>
     </div>
+
+    <div class="header-btn">
+      <ul>
+        <li>
+          <a [routerLink]="['tender']" class="">Tender</a>
+        </li>
+        <li>
+          <a [routerLink]="['bid']" class="">Bid</a>
+        </li>
+        <li>
+          <a  [routerLink]="['started']"  class="">Construction Started</a>
+        </li>
+        <li>
+          <a [routerLink]="['completed']"  class="">Construction Finished</a>
+        </li>
+      </ul>
+    </div>
+
+    <router-outlet></router-outlet>
 
 
   </div>
+
+
+</div>
